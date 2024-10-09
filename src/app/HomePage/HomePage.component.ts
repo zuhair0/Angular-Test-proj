@@ -10,9 +10,10 @@ import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
 
   isDropdownOpen: boolean = false
+  isSelected: boolean=false
 
   ngOnInit(): void { }
-
+  
   toggleDropdown(){
     this.isDropdownOpen = !this.isDropdownOpen
   }
